@@ -2,10 +2,8 @@ import axios from 'axios';
 
 const apiClient = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL,
-    timeout: 10000,
     withCredentials: true,
 })
-
 
 // Request Interceptor → Attach JWTa
 apiClient.interceptors.request.use(config => {
@@ -25,5 +23,7 @@ apiClient.interceptors.response.use(
         return Promise.reject(error.response?.data || error.message);
     }
 );
+
+
 
 export default apiClient;

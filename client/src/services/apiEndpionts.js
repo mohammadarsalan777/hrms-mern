@@ -1,7 +1,7 @@
 export const AUTH = {
-  LOGIN: "/auth/login",
-  REGISTER: "/auth/register",
-  GOOGLE: "/auth/google",
+  LOGIN: "/api/v1/auth/employees/login",
+  REGISTER: "/api/v1/auth/employees/create", // Fixed to match backend
+  GOOGLE: "/api/v1/auth/employees/google",
 };
 
 export const LEAVES = {

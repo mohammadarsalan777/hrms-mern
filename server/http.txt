@@ -1,0 +1,16 @@
+200 -  success
+201 - created
+202 - accepted
+204 - No content
+
+400 - bad request
+401 - unauthorized
+403 - forbidden(NO permission)
+404 - Not found 
+409 - conflict
+422 - unprocessable entity (validation failed)
+
+500 - internal server error
+502 - bad gateway
+503 - service unavailable 
+504 - gateway timeout
