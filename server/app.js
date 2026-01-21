@@ -19,9 +19,9 @@ app.use(cors({
 app.use(cookieParser());
 
 // Security headers with helmet
-// app.use(helmet({
-//     crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin requests
-// }));
+app.use(helmet({
+    crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin requests
+}));
 
 // Routes
 import employeeRoutes from './routes/employeeAuth.routes.js';

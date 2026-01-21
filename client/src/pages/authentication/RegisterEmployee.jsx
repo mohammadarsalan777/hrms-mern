@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 
 const RegisterEmployee = () => {
-    const [data, setData] = useState({ email: '', password: '' })
+    const [data, setData] = useState({ email: '', password: '', role: '' })
     const submitHandler = async (e) => {
         e.preventDefault()
         registerEmployee(data).then((res) => {
@@ -29,6 +29,14 @@ const RegisterEmployee = () => {
                 className='border border-black'
 
             />
+
+            <input
+                type="text"
+                value={data.role}
+                onChange={(e) => setData({ ...data, role: e.target.value })}
+                className='border border-black'
+            />
+
             <Button onClick={submitHandler}>Register</Button>
         </div>
     )
